@@ -21,7 +21,3 @@ This project aims to design and develop a professional, responsive website that 
 |------|------|------------------|
 | Ishan Keshwani | Team Lead / Developer | @IshanKeshwani |
 
-## 🚀 Getting Started
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ksu-is/we-fix-phones-website.git
