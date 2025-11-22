@@ -1,0 +1,177 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>We Fix Phones - iPhone Repair Services</title>
+     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fff 0%, #ffebee 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #c41c3b 0%, #d32f2f 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+         .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+            font-size: 1em;
+        }
+
+        .label-highlight {
+            color: white;
+        } 
+        
+        select, input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        select:focus, input:focus {
+            outline: none;
+            border-color: #c41c3b;
+            box-shadow: 0 0 5px rgba(196, 28, 59, 0.2);
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .service-checkbox {
+            display: flex;
+            align-items: center;
+        }
+
+        .service-checkbox input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+            accent-color: #c41c3b;
+        }
+        .service-checkbox label {
+            margin: 0;
+            font-weight: normal;
+            cursor: pointer;
+            flex-grow: 1;
+        }
+       
+       button {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #c41c3b 0%, #d32f2f 100%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(196, 28, 59, 0.3);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+       .quote-result {
+            margin-top: 30px;
+            padding: 25px;
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            border-left: 5px solid #c41c3b;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .quote-result.show {
+            display: block;
+            animation: slideIn 0.3s ease-in-out;
+        }
+       @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+       .quote-result h3 {
+            color: #c41c3b;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+       .quote-detail {
+            margin: 10px 0;
+            color: #333;
+            font-size: 0.95em;
+        }
+
+        .total-quote {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #c41c3b;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px solid rgba(196, 28, 59, 0.3);
+        }
+        .error-message {
+            color: #c41c3b;
+            font-size: 0.9em;
+            margin-top: 5px;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+       
